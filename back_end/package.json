@@ -1,0 +1,12 @@
+{
+  "name": "theNeural",
+  "version": "0.1",
+  "dependencies": {
+    "express": "*",
+    "mongodb": "*",
+    "body-parser": "*",
+    "cheerio": "*",
+    "request": "*",
+    "async": "*"
+  }
+}
