@@ -5,13 +5,19 @@
 
 @font-face {
           font-family: head; 
-          src: url("font/Quark-Bold.otf");
+          src: url("font/ARLRDBD.ttf");
+        }
+
+@font-face {
+          font-family: body; 
+          src: url("font/THSarabun Bold.ttf");
         }
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300'
 
 body{
   background-color: #26A88A;
 }
+
 
 h3 {
   font-family: navB;
@@ -23,6 +29,61 @@ img {
   /*box-shadow: 1px 1px 4px #B7B7B7;*/
   width: 80%;
 }
+
+.favbox{
+  color:white;
+  height: 150px;
+  border: 1px solid white;
+  padding:10px;
+
+}
+.favbox:hover{
+  color:white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.white{
+  color:#545454  ;
+  border: 1px solid #C6C6C6; 
+}
+.white:hover{
+  background-color:grey;
+  color:black;
+}
+.red{
+  background-color:#CF5A5A;
+}
+.red:hover{
+  background-color:#C94C4C;
+}
+.green{
+  background-color:#7DC08B;
+}
+.green:hover{
+  background-color:#6BBA7A;
+}
+.nameStock{
+  font-style: bold;
+  font-size: 145%;
+  height: 25px;
+}
+.detailStock{
+  font-size: 60%;
+  height: 60px;
+}
+.priceStock{
+  font-size: 140%;
+  font-style: bold;
+  height: 25px;
+}
+.detailPriceStock{
+  font-size: 60%;
+  height: 10px;
+}
+.favG{
+  font-size: 50%;
+}
+
 #nav_menu, #nav_brand {
   font-family: navB;
   color: white;
@@ -33,7 +94,7 @@ img {
 }
  #profile{
  	height: 180px;
- 	background-color:#FFFFFF;
+ 	background-color:#EEEEEE;
  	padding: 2%;
  	font-family: head;
  	color: #343434 ;
@@ -46,10 +107,10 @@ img {
  	background-color:#E5E5E5;
  	border-style: solid;
  	border-width: 1px;
- 	border-color: #E2E2E2;
+ 	border-color: #C6C6C6;
   padding: 10px;
  	color:#919191;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .nopadding {
@@ -102,7 +163,7 @@ font-size: 15px;
 
 .tabinhere {
   font-family: navB;
-  color: #D5D5D5;
+  color: #5CA895;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
@@ -135,15 +196,10 @@ color:#636363;
 }
 
 
-
-.block{
-  border-bottom: thin solid #DADADA;
-}
-
 .button_lookmore{
   font-family: navB;
   height: 300px;
-  background-color:#88CDBC;
+  background-color:#73BEA4    ;
   border-style: solid;
   border-width: 1px;
   color:white;
@@ -151,8 +207,7 @@ color:#636363;
 
 }
 
-.button_lookmore button:hover{
-  
+.button_lookmore:hover{
   background-color:#5CA895;
   color:white;
 }
@@ -194,4 +249,47 @@ color:#636363;
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.switch {
+    position:relative;
+    width:37px;
+    height:16px;
+    overflow:hidden;
+    cursor:pointer;
+}
+.switch .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:37px;
+    height:16px;
+    background:url('./overlay.png') no-repeat 0 0;
+    z-index:9;
+}
+.switch span.switched {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:58px;
+    height:16px;
+    background:#d9d9d9 url('./switch.gif') no-repeat 0 0;
+    z-index:8;
+}
+.switch span.off {
+    left:-21px;
+}
+.switch input {
+    display:none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .switch .overlay {
+        background:url('./overlay@2x.png') no-repeat 0 0;
+        background-size:37px 16px;
+    }
+    .switch span.switched {
+        background:url('./switch@2x.gif') no-repeat 0 0;
+        background-size:58px 16px;
+    }
 }
