@@ -1,3 +1,4 @@
 # neuralProj
-Created by The neural Team KMUTT TESTTTTT
-sontean
+Created by The neural Team KMUTT
+version 0.0.1
+
