@@ -19,7 +19,7 @@ body{
 }
 
 
-h3 {
+h3,h5{
   font-family: navB;
   color:#696969;
 }
@@ -28,6 +28,16 @@ img {
   border-radius: 150px;
   /*box-shadow: 1px 1px 4px #B7B7B7;*/
   width: 80%;
+}
+.sub_main_panel{
+    height: 200px;
+    overflow: auto;
+}
+.alert{
+  color:#3F3F3F;
+  margin-bottom:0; 
+  padding-top: 10px; 
+  padding-bottom: 10px;
 }
 
 .favbox{
@@ -172,7 +182,13 @@ color:#65C3AE  ;
 .nav-tabs>li>a, .nav-tabs>li>a:hover, .nav-tabs>li>a:focus{
 color:#444444  ;
 }
-
+#your .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+background-color:#7BC1E3;
+color:white;
+}
+#your .nav-pills>li>a, .nav-pills>li>a:hover, .nav-pills>li>a:focus{
+color:#636363;
+}
 #pin .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
 background-color:#7BC1E3;
 color:white;
@@ -199,8 +215,8 @@ color:#636363;
 .button_lookmore{
   font-family: navB;
   height: 300px;
-  background-color:#73BEA4    ;
-  border-style: solid;
+  background-color:#73BEA4;
+  border-style: solid #C6C6C6;
   border-width: 1px;
   color:white;
   font-size: 16px;
@@ -209,6 +225,22 @@ color:#636363;
 
 .button_lookmore:hover{
   background-color:#5CA895;
+  color:white;
+}
+
+.button_fade{
+  font-family: navB;
+  height: 300px;
+  background-color:#E5E5E5 ;
+  border-style: solid #C6C6C6;
+  border-width: 1px;
+  color:#B9B9B9;
+  font-size: 10px;
+
+}
+
+.button_fade:hover{
+  background-color:#CBCBCB;
   color:white;
 }
   .button {
