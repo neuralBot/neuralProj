@@ -23,7 +23,7 @@ h3,h5{
   font-family: navB;
   color:#696969;
 }
-img {
+.avatar{
   
   border-radius: 150px;
   /*box-shadow: 1px 1px 4px #B7B7B7;*/
@@ -104,7 +104,7 @@ img {
 }
  #profile{
  	height: 180px;
- 	background-color:#EEEEEE;
+ 	background-color:#FFFFFF;
  	padding: 2%;
  	font-family: head;
  	color: #343434 ;
