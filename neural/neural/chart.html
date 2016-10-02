@@ -12,58 +12,26 @@
 	<link href="main.css" rel="stylesheet">
 </head>
 <body>
+<div class="container" style="padding: 20px">
+  <h4>Enter name </h4>
+  <input type="text" class="form-control" name="nameCompany" id="company" placeholder="Symbol Company" style="width: 400px;margin-bottom: 20px">
+  <input type="button" class="btn" value="submit" onclick="getdata()">
+</div>
 <div id='myChart2'></div>
-<div id='myChart3'></div>
-<div id='myChart4'></div>
 <div id='myChart5'></div>
+<div id='myChart3'></div>
+<div id='myChart3_2'></div>
+<div id='myChart4'></div>
 <div id='myChart6'></div>
+<div id='myChart7'></div>
+<div id='myChart8'></div>
 </body>
-<script src="example-min.js"></script>
 <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
 <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
-		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];
+	ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];
 </script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-<script src="config.js"></script>
 <script src="dist/js/jQDateRangeSlider-min.js"></script>
-	
-	<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
-		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
-<script src="example.js"></script>
-<script>
-	zingchart.render({
-      id: 'myChart2',
-      data: SalesProfits,
-      height: 1000,
-      width: '100%',
-    });
 
-	zingchart.render({
-      id: 'myChart3',
-      data: ReturnEquity,
-      height: 1000,
-      width: '100%',
-    });
-
-    zingchart.render({
-      id: 'myChart4',
-      data: Yield,
-      height: 1000,
-      width: '100%',
-    });
-
-    zingchart.render({
-      id: 'myChart5',
-      data: Yoy,
-      height: 1000,
-      width: '100%',
-    });
-
-    zingchart.render({
-      id: 'myChart6',
-      data: PriceProfits,
-      height: 1000,
-      width: '100%',
-    });
-</script>
+<script src="config.js"></script>
 </html>
